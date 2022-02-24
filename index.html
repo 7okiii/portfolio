@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="./js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/c09e3dd97d.js" crossorigin="anonymous"></script>
+    <title>Naoki Ogata</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="">Naoki Ogata</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hamburger" id="small">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="greeting-wrapper">
+            <div class="container greeting" id="home">
+                <div class="intro">
+                    <h1 class="main-title">Hi, I'm <span style="color: orange;">N</span>aoki</h1>
+                    <h2>Web developer</h2>
+                </div>
+                <div class="mypic">
+                    <!-- <img src="./img/IMG_0258 2.jpg" alt="Naoki Ogata"> -->
+                </div>
+            </div>
+        </div>
+        <div class="about-wrapper">
+            <div class="container about" id="aboutme">
+                <h2 class="title"><span class="first-letter">A</span>bout Me</h2>
+                <div class="about-detail">
+                    <div class="about-left">
+                        <p>
+                            Hi, Thank you very much for visiting my page.
+                            My name is Naoki Ogata. 
+                            I finished my course at Tamwood carrier college, and I'm looking for a co-op opportunity.
+                            <br><br>
+                            I love coding. I love to think about making something new with my logic. I'm passionate about learning web development.
+                        </p>    
+                    </div>
+                    <div class="about-right">
+                        <h3><span style="color: #ee5253;">J</span>apanese</h3>
+                        <h3>Love <span style="color: #0abde3;">C</span>oding</h3>
+                        <h3><span style="color: #ff9f43;">P</span>assionate</h3>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="skill-wrapper">
+            <div class="container skill" id="skills">
+                <h2 class="title"><span class="first-letter">S</span>kills</h2>
+                <div class="icons">
+                    <div class="icon" id="name">
+                        <img src="./img/icons/icons8-html-5-48.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-css3-48.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-sass-48.png" alt="">
+                        <p>Sass</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-javascript-96.png" alt="">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-jquery-50.png" alt="jquery">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-angular-a-typescript-based-open-source-web-application-framework-48.png" alt="">
+                        <p>Angular JS</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-bootstrap-48.png" alt="">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-react-80.png" alt="">
+                        <p>React</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-node-js-48.png" alt="">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-mysql-logo-48.png" alt="">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/icons8-github-50.png" alt="github">
+                        <p>Github</p>
+                    </div>    
+                    <div class="icon">
+                        <img src="./img/icons/icons8-visual-studio-code-2019-48.png" alt="vscode">
+                        <p>VS code</p>
+                    </div>    
+                    <div class="icon">
+                        <img src="./img/icons/linux_PNG21.png" alt="linux">
+                        <p>Linux</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="container project" id="projects">
+                <div class="dash-modal" style="display: none;">
+                    <i class="fas fa-times" id="regTimes"></i>
+                    <div class="modal-container">
+                        <div class="modal-pic">
+                            <img id="img" alt="">
+                        </div>
+                        <div class="modal-php modal-detail" style="display: none;">
+                            <h3>Dynamic dashboard</h3>
+                            <p class="modal-title">HTML, Sass, Bootstrap5, Javascript, jQuery, PHP, MySQL, GitHub</p>
+                            <p>
+                                A dynamic dashboard for the educational institution. Dashboard and content pages are created by HTML, Sass, Javascript and jQuery for the front-end. PHP to routine pages, Hash and salt technique for secured data storing. <br>
+                                Allow school administrators to register new students and teachers, able to publish new courses and appoint teachers for each course, and appoint new admin users. For class size, set maximum and minimum capacity, allows teachers to mark and leave comments for students’ learning and progress,  students can see their marks and comments from teachers. And also enroll for a course and check the price and detail for each course.
+                            </p>
+                        </div>
+                        <div class="modal-bakery modal-detail" style="display: none;">
+                            <h3>Online shopping system</h3>
+                            <p class="modal-title">HTML, Sass, Angular JS, jQuery</p>
+                            <p>
+                                An in-class project which uses Angular JS. HTML, Sass and jQuery for front-end. Angular JS logic to validate each input box, by using ng-model access to the element and  display a modal box for each item when the item is clicked. jQuery to make a fade-out animation when an item is added to a shopping cart.
+                                <br>
+                                Customers can choose the number of items and add them to a shopping cart. And check the details and total price, edit the number of items and delete them from the shopping cart. 
+                            </p>
+                        </div>
+                        <div class="modal-responsive modal-detail" style="display: none;">
+                            <h3>Responsive website</h3>
+                            <p class="modal-title">HTML, Sass, Bootstrap, Javascript, jQuery</p>
+                            <p>
+                                A fully responsive landing page for a musician uses Bootstrap and the media query method. Javascript to validate each input box by Regular expression. Display different contents depending on what button is clicked.
+                                <br>
+                                The viewer can see information about the musician, watch a  music video by a provided link and check the event and concert date. Contact musician through the validated contact form. 
+                            </p>
+                        </div>
+                        <div class="modal-node modal-detail" style="display: none;">
+                            <h3>Dynamic dashboard</h3>
+                            <p class="modal-title">HTML, Sass, Bootstrap5, Javascript, jQuery, PHP, MySQL, GitHub</p>
+                            <p>
+                                A dynamic dashboard for the educational institution. Dashboard and content pages are created by HTML, Sass, Javascript and jQuery for the front-end. PHP to routine pages, Hash and salt technique for secured data storing. <br>
+                                Allow school administrators to register new students and teachers, able to publish new courses and appoint teachers for each course, and appoint new admin users. For class size, set maximum and minimum capacity, allows teachers to mark and leave comments for students’ learning and progress,  students can see their marks and comments from teachers. And also enroll for a course and check the price and detail for each course.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <h2><span class="first-letter">P</span>roject</h2>
+                <div class="projects">
+                    <div class="php project-card">
+                        <img src="./img/project/Screen Shot 2022-02-10 at 13.51.56.png" alt="php project">
+                        <div class="detail">
+                            <h3><span style="color: #8e44ad;">D</span>ynamic dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="bakery project-card">
+                        <img src="./img/project/Screen Shot 2022-02-14 at 1.28.41.png" alt="bakery project">
+                        <div class="detail">
+                            <h3><span style="color: #2980b9;">O</span>nline shopping system</h3>
+                        </div>
+                    </div>
+                    <div class="responsive project-card">
+                        <img src="./img/project/musician.png" alt="responsive project">
+                        <div class="detail">
+                            <h3><span style="color: #f1c40f;">R</span>esponsive website</h3>
+                        </div>
+                    </div>
+                    <div class="node project-card">
+                        <img src="./img/project/test.png" alt="react project">
+                        <div class="detail">
+                            <h3><span style="color: #27ae60;">R</span>egistration form</h3>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="education-wrapper">
+            <div class="container education" id="education">
+                <h2 class="title"><span class="first-letter">E</span>ducation</h2>
+                <div class="edu-detail">
+                    <a target="_blank" href="https://www.ryukoku.ac.jp/english2/">
+                        <div class="edu-logo">
+                            <img src="./img/ryukoku.png" alt="">
+                            <h3><span style="color: red;">R</span>yukoku University</h3>
+                            <p>Bachelor Degree in Economics </p>
+                            <p>2015 - 2019</p>
+                        </div>    
+                    </a>
+                    <a target="_blank" href="https://tamwood.com/">
+                        <div class="edu-right">
+                            <img src="./img/tamwood.png" alt="">
+                            <h3><span style="color: #2980b9;">T</span>amwood carrier college</h3>
+                            <p>Diploma in web development</p>
+                            <p>Sep 2021 - Mar 2022</p>
+                        </div>    
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-wrapper">
+            <div class="container contact" id="contact">
+                <h2 class="title"><span class="first-letter">C</span>ontact Me</h2>
+                <div class="form">
+                    <form>
+                        <div class="name">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <input id="email-inp" type="email" placeholder="Email Address">
+                        <textarea cols="30" rows="10"></textarea>
+                        <button id="btn" type="button">Send</button>
+                    </form>
+                    <div class="sns">
+                        <div>
+                            <a href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><img src="./img/icons/icons8-linkedin-48 (1).png" alt=""></a>
+                            <a href="https://github.com/Nnookk"><img src="./img/icons/icons8-github-48.png" alt=""></a>
+                            <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing"><img src="./img/icons8-document (2).gif" alt=""></a>    
+                        </div>
+                        <a href="tel:+14377722943">437-772-2943</a>
+                        <a href="mailto:ogata.nok@gmail.com" target="_blank">ogata.nok@gmail.com</a>        
+                    </div>
+                </div>
+            </div>
+            <p id="footer">© Naoki Ogata 2022</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
