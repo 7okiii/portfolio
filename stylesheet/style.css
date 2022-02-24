@@ -35,28 +35,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f39c12;
+  background-color: #10ac84;
   height: 50px;
   padding-left: 20px;
 }
 
 .nav .logo a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   font-family: ubuntu;
   font-weight: bold;
   font-size: 1.2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
-.nav .logo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.nav .logo a:hover {
+  color: black;
 }
 
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 5px;
 }
 
 .nav ul li {
@@ -66,14 +69,15 @@ body {
 .nav ul li a {
   text-decoration: none;
   color: white;
-  padding: 11px 20px;
+  padding: 10px 15px;
   font-family: ubuntu;
-  font-weight: bold;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
-.nav ul li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.nav ul li a:hover {
+  border-bottom: 3px solid white;
+  color: black;
 }
 
 @media screen and (max-width: 500px) {
@@ -182,14 +186,22 @@ nav.globalMenuSp ul li:last-child {
 }
 
 nav.globalMenuSp ul li:hover {
-  background: #4b4b4b;
+  background-color: rgba(255, 255, 255, 0.537);
 }
 
 nav.globalMenuSp ul li a {
   display: block;
   color: #fff;
+  font-weight: bold;
   padding: 1em 0;
   text-decoration: none;
+  font-family: ubuntu;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+nav.globalMenuSp ul li a:hover {
+  color: #000000;
 }
 
 nav.globalMenuSp.active {
@@ -212,7 +224,7 @@ nav.globalMenuSp.active {
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  padding: 250px 0;
+  padding: 15em 0;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -236,11 +248,13 @@ nav.globalMenuSp.active {
 .greeting-wrapper .greeting .intro h1 {
   font-size: 4.5rem;
   font-family: alfa;
+  text-align: center;
 }
 
 .greeting-wrapper .greeting .intro h2 {
   font-size: 2rem;
   font-family: alfa;
+  text-align: center;
 }
 
 .greeting-wrapper .greeting .mypic {
@@ -255,6 +269,12 @@ nav.globalMenuSp.active {
 
 .greeting-wrapper .greeting .mypic img {
   max-width: 300px;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 0 0;
+  }
 }
 
 .about {
@@ -393,13 +413,19 @@ nav.globalMenuSp.active {
       -ms-flex-align: center;
           align-items: center;
   font-family: ubuntu;
-  background-color: rgba(255, 255, 255, 0.37);
   padding: 20px 0;
   border-bottom: 3px solid white;
 }
 
 .skill-wrapper .icons .icon img {
   width: 65%;
+  padding: 5px;
+}
+
+.skill-wrapper .icons .icon:hover {
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 5px 5px 0 0;
+  border-bottom: 3px solid #f0942bd7;
 }
 
 .project {
@@ -482,19 +508,35 @@ nav.globalMenuSp.active {
 }
 
 .project-wrapper .projects .php {
-  border-bottom: 3px solid #8e44ad;
+  border-bottom: 3px solid white;
+}
+
+.project-wrapper .projects .php:hover {
+  border-bottom: 3px solid #f0942bd7;
 }
 
 .project-wrapper .projects .bakery {
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid white;
+}
+
+.project-wrapper .projects .bakery:hover {
+  border-bottom: 3px solid #f0942bd7;
 }
 
 .project-wrapper .projects .responsive {
-  border-bottom: 3px solid #f1c40f;
+  border-bottom: 3px solid white;
+}
+
+.project-wrapper .projects .responsive:hover {
+  border-bottom: 3px solid #f0942bd7;
 }
 
 .project-wrapper .projects .node {
-  border-bottom: 3px solid #27ae60;
+  border-bottom: 3px solid white;
+}
+
+.project-wrapper .projects .node:hover {
+  border-bottom: 3px solid #f0942bd7;
 }
 
 .project-wrapper .projects img {
@@ -576,7 +618,8 @@ nav.globalMenuSp.active {
 }
 
 .education-wrapper .education .edu-detail .edu-logo h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .education-wrapper .education .edu-detail .edu-logo:hover {
@@ -609,7 +652,8 @@ nav.globalMenuSp.active {
 }
 
 .education-wrapper .education .edu-detail .edu-right h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .education-wrapper .education .edu-detail .edu-right:hover {
@@ -667,77 +711,7 @@ nav.globalMenuSp.active {
   opacity: 0.9;
 }
 
-.contact-wrapper .form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.822) 7px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.822) 7px 7px 29px 0px;
-}
-
-.contact-wrapper .form form input {
-  height: 35px;
-  padding-left: 5px;
-  border-radius: 2px;
-  border: none;
-  outline: 1px solid black;
-  font-family: ubuntu;
-}
-
-.contact-wrapper .form form input:focus {
-  outline: 2px solid #f39c12;
-}
-
-.contact-wrapper .form form .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contact-wrapper .form form .name input {
-  width: 49%;
-}
-
-.contact-wrapper .form form #email-inp {
-  margin: 7px 0;
-}
-
-.contact-wrapper .form form textarea {
-  padding: 5px;
-  margin-bottom: 5px;
-  border-radius: 2px;
-  border: none;
-  outline: 1px solid black;
-  font-family: ubuntu;
-}
-
-.contact-wrapper .form form textarea:focus {
-  outline: 2px solid #f39c12;
-}
-
-.contact-wrapper .form form button {
-  height: 35px;
-  background-color: #f39c12;
-  border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 2px;
-  outline: 1px solid black;
-  font-family: ubuntu;
-}
-
-.contact-wrapper .form form button:hover {
-  background-color: #b1720d;
-}
-
-.contact-wrapper .form .sns {
+.contact-wrapper .form .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,38 +727,106 @@ nav.globalMenuSp.active {
           align-items: center;
 }
 
-.contact-wrapper .form .sns img {
-  width: 50px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.contact-wrapper .form .sns img:hover {
-  opacity: 0.7;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.contact-wrapper .form .sns a {
-  font-size: 1.5rem;
-  margin: 5px 0;
+.contact-wrapper .form .phone a {
   color: black;
   font-weight: bold;
   text-decoration: none;
   font-family: ubuntu;
 }
 
-.contact-wrapper .form .sns a:hover {
-  color: #2980b9;
+.contact-wrapper .form .phone a:hover {
+  color: #f0942bd7;
   cursor: pointer;
+}
+
+.contact-wrapper .form .phone {
+  background-color: #ffffff89;
+  border-radius: 5px;
+  padding: 3rem 0;
+}
+
+.contact-wrapper .form .phone i {
+  font-size: 2.5rem;
+}
+
+.contact-wrapper .form .phone-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.contact-wrapper .form .phone-top .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .form .phone-top .box a {
+  font-size: 1.1rem;
+}
+
+.contact-wrapper .form .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .form .sns .box {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  -ms-grid-columns: (minmax(2rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+}
+
+.contact-wrapper .form .sns .box a {
+  text-align: center;
+}
+
+.contact-wrapper .form .sns .box a:hover {
+  color: #f0942bd7;
+}
+
+.contact-wrapper .form .sns .box p {
+  font-size: 1.1rem;
+  font-family: ubuntu;
 }
 
 .contact-wrapper #footer {
   text-align: center;
   padding: 20px 0;
   font-size: 1.2rem;
+  font-family: ubuntu;
 }
 
 .dash-modal {

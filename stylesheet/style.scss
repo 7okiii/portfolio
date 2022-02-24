@@ -42,34 +42,40 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f39c12;
+    background-color: #10ac84;
     height: 50px;
     padding-left: 20px;
     .logo {
         a {
+            display: inline-block;
             text-decoration: none;
             color: white;
             font-family: ubuntu;
             font-weight: bold;
             font-size: 1.2rem;
+            // padding: 9px 10px;
+            transition: all .2s;
+            &:hover {
+                color: black;
+            }    
         }
-        &:hover {
-            transform: scale(1.1);
-        }
+
     }
     ul {
         display: flex;
+        padding-right: 5px;
         li {
             list-style: none;
             a {
                 text-decoration: none;
                 color: white;
-                padding: 11px 20px;
+                padding: 10px 15px;
                 font-family: ubuntu;
-                font-weight: bold;
-            }
-            &:hover {
-                transform: scale(1.1);
+                transition: all .3s;
+                &:hover {
+                    border-bottom: 3px solid white;
+                    color: black;
+                }
             }
         }    
     }
@@ -176,14 +182,21 @@ nav.globalMenuSp ul li:last-child {
     padding-bottom: 0;
 }
 nav.globalMenuSp ul li:hover{
-    background :#4b4b4b;
+    // background :#4b4b4b;
+    background-color: rgba(255, 255, 255, 0.537);
 }
   
 nav.globalMenuSp ul li a {
     display: block;
     color: #fff;
+    font-weight: bold;
     padding: 1em 0;
     text-decoration :none;
+    font-family: ubuntu;
+    transition: .4s all;
+    &:hover {
+        color: #000000;
+    }
 }
 
 nav.globalMenuSp.active {
@@ -202,7 +215,7 @@ nav.globalMenuSp.active {
     .greeting {
         z-index: 1;
         display: grid;
-        padding: 250px 0;
+        padding: 15em 0;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         .intro {
             display: flex;
@@ -211,11 +224,13 @@ nav.globalMenuSp.active {
             justify-content: center;
             h1 {
                 font-size: 4.5rem;
-                font-family: alfa;         
+                font-family: alfa;       
+                text-align: center;  
             }
             h2 {
                 font-size: 2rem;
                 font-family: alfa;
+                text-align: center;
             }
         }
         .mypic {
@@ -229,6 +244,11 @@ nav.globalMenuSp.active {
     }
 }
 
+@media screen and (max-width:400px) {
+    .container {
+        padding: 0 0;
+    }
+}
 
 @include fadeIn('.about');
 
@@ -291,12 +311,18 @@ nav.globalMenuSp.active {
             align-items: center;
             font-family: ubuntu;
             // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            background-color: rgba(255, 255, 255, 0.37);
+            // background-color: rgba(255, 255, 255, 0.37);
             padding: 20px 0;
             // border-radius: 5px;
             border-bottom: 3px solid white;
             img {
                 width: 65%;
+                padding: 5px
+            }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.192);
+                border-radius: 5px 5px 0 0;
+                border-bottom: 3px solid #f0942bd7;
             }
         }
     }
@@ -346,16 +372,28 @@ nav.globalMenuSp.active {
 
         }
         .php {
-            border-bottom: 3px solid #8e44ad;
+            border-bottom: 3px solid white;
+            &:hover {
+                border-bottom: 3px solid #f0942bd7;
+            }
         }
         .bakery {
-            border-bottom: 3px solid #2980b9;
+            border-bottom: 3px solid white;
+            &:hover {
+                border-bottom: 3px solid #f0942bd7;
+            }
         }
         .responsive {
-            border-bottom: 3px solid #f1c40f;
+            border-bottom: 3px solid white;
+            &:hover {
+                border-bottom: 3px solid #f0942bd7;
+            }
         }
         .node {
-            border-bottom: 3px solid #27ae60;
+            border-bottom: 3px solid white;
+            &:hover {
+                border-bottom: 3px solid #f0942bd7;
+            }
         }
         img {
             width: 100%;
@@ -396,7 +434,8 @@ nav.globalMenuSp.active {
                     margin-bottom: 20px;
                 }    
                 h3 {
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
                 }
                 &:hover {
                     opacity: 0.8;
@@ -414,7 +453,8 @@ nav.globalMenuSp.active {
                     margin-bottom: 20px;
                 }
                 h3 {
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
                 }
                 &:hover {
                     opacity: 0.8;
@@ -444,92 +484,97 @@ nav.globalMenuSp.active {
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         gap: 20px;
         opacity: 0.9;
-        form {
+        .phone {
             display: flex;
             flex-direction: column;
-            box-shadow: rgba(100, 100, 111, 0.822) 7px 7px 29px 0px;
-            input {
-                height: 35px;
-                padding-left: 5px;
-                border-radius: 2px;
-                border: none;
-                outline: 1px solid black;
-                font-family: ubuntu;
-                &:focus {
-                    outline:2px solid #f39c12;
-                }
-            }
-            .name {
-                display: flex;
-                justify-content: space-between;
-                input {
-                    width: 49%;
-                }
-            }
-            #email-inp {
-                margin: 7px 0;
-            }
-            textarea {
-                padding: 5px;
-                margin-bottom: 5px;
-                border-radius: 2px;
-                border: none;
-                outline: 1px solid black;
-                font-family: ubuntu;
-                &:focus {
-                    outline:2px solid #f39c12;
-                }
-            }
-            button {
-                height: 35px;
-                background-color: #f39c12;
-                border: none;
-                color: white;
+            justify-content: center;
+            align-items: center;
+            a {
+                // margin: 5px 0;
+                color: black;
                 font-weight: bold;
-                border-radius: 2px;
-                outline: 1px solid black;
+                text-decoration: none;
                 font-family: ubuntu;
                 &:hover {
-                    background-color: #b1720d;
+                    color: #f0942bd7;
+                    // text-shadow: 2px 2px 5px rgb(210, 210, 210);
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .phone {
+            background-color: #ffffff89;
+            border-radius: 5px;
+            padding: 3rem 0;
+            i {
+                font-size: 2.5rem;
+            }
+        }
+        .phone-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            .box {
+                display: flex;
+                align-items: center;
+                a {
+                    font-size: 1.1rem;
                 }
             }
         }
         .sns {
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             justify-content: center;
             align-items: center;
             // background-color: white;
-            img {
-                width: 50px;
-                transition: all 0.5s;
-                background-color: rgb(255, 255, 255);
-                border-radius: 5px;
-                &:hover {
-                    opacity: 0.7;
-                    transform: scale(1.1);
+            .box {
+                display: grid;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                grid-template-columns: repeat(auto-fit,minmax(2rem,1fr));
+                a {
+                    text-align: center;
+                    &:hover {
+                        color: #f0942bd7;
+                    }
+                }
+                p {
+                    font-size: 1.1rem;
+                    font-family: ubuntu;
                 }
             }
-            a {
-                font-size: 1.5rem;
-                margin: 5px 0;
-                color: black;
-                font-weight: bold;
-                text-decoration: none;
-                font-family: ubuntu;
-                // text-shadow: 3px 3px 3px black;
-                &:hover {
-                    color: #2980b9;
-                    // text-shadow: 2px 2px 5px rgb(210, 210, 210);
-                    cursor: pointer;
-                }
-            }
+            // .la-linkedin-in {
+            //     color: black;
+            //     &:hover {
+            //         color: #2980b9;
+            //     }
+            // }
+            // .la-github {
+            //     color: black;
+            //     &:hover {
+            //         color: rgb(58, 58, 58);
+            //     }
+
+            // }
+            // .la-file-alt {
+            //     color: black;
+            //     &:hover {
+            //         color: rgb(58, 58, 58);
+            //     }
+            // }
         }
     }
     #footer {
         text-align: center;
         padding: 20px 0;
         font-size: 1.2rem;
+        font-family: ubuntu;
     }
 }
 .dash-modal {

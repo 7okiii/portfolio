@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./stylesheet/style.css">
     <script src="./js/jquery.js"></script>
     <script src="https://kit.fontawesome.com/c09e3dd97d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Naoki Ogata</title>
 </head>
 <body>
@@ -46,12 +47,12 @@
         <div class="greeting-wrapper">
             <div class="container greeting" id="home">
                 <div class="intro">
-                    <h1 class="main-title">Hi, I'm <span style="color: orange;">N</span>aoki</h1>
+                    <h1 class="main-title">Hi, I'm <span style="color: #ff9f43;">N</span>aoki</h1>
                     <h2>Web developer</h2>
                 </div>
-                <div class="mypic">
-                    <!-- <img src="./img/IMG_0258 2.jpg" alt="Naoki Ogata"> -->
-                </div>
+                <!-- <div class="mypic">
+                    <img src="./img/IMG_0258 2.jpg" alt="Naoki Ogata">
+                </div> -->
             </div>
         </div>
         <div class="about-wrapper">
@@ -96,7 +97,7 @@
                         <p>Javascript</p>
                     </div>
                     <div class="icon">
-                        <img src="./img/icons/icons8-jquery-50.png" alt="jquery">
+                        <img src="./img/icons/jquery.png" alt="jquery">
                         <p>jQuery</p>
                     </div>
                     <div class="icon">
@@ -106,6 +107,10 @@
                     <div class="icon">
                         <img src="./img/icons/icons8-bootstrap-48.png" alt="">
                         <p>Bootstrap</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./img/icons/php.png" alt="">
+                        <p>PHP</p>
                     </div>
                     <div class="icon">
                         <img src="./img/icons/icons8-react-80.png" alt="">
@@ -120,7 +125,7 @@
                         <p>MySQL</p>
                     </div>
                     <div class="icon">
-                        <img src="./img/icons/icons8-github-50.png" alt="github">
+                        <img src="./img/icons/icons8-github-50 (2).png" alt="github">
                         <p>Github</p>
                     </div>    
                     <div class="icon">
@@ -184,25 +189,25 @@
                     <div class="php project-card">
                         <img src="./img/project/Screen Shot 2022-02-10 at 13.51.56.png" alt="php project">
                         <div class="detail">
-                            <h3><span style="color: #8e44ad;">D</span>ynamic dashboard</h3>
+                            <h3><span style="color: #f0942bd7;">D</span>ynamic dashboard</h3>
                         </div>
                     </div>
                     <div class="bakery project-card">
                         <img src="./img/project/Screen Shot 2022-02-14 at 1.28.41.png" alt="bakery project">
                         <div class="detail">
-                            <h3><span style="color: #2980b9;">O</span>nline shopping system</h3>
+                            <h3><span style="color: #f0942bd7;">O</span>nline shopping system</h3>
                         </div>
                     </div>
                     <div class="responsive project-card">
                         <img src="./img/project/musician.png" alt="responsive project">
                         <div class="detail">
-                            <h3><span style="color: #f1c40f;">R</span>esponsive website</h3>
+                            <h3><span style="color: #f0942bd7;">R</span>esponsive website</h3>
                         </div>
                     </div>
                     <div class="node project-card">
                         <img src="./img/project/test.png" alt="react project">
                         <div class="detail">
-                            <h3><span style="color: #27ae60;">R</span>egistration form</h3>
+                            <h3><span style="color: #f0942bd7;">R</span>egistration form</h3>
                         </div>
                     </div>    
                 </div>
@@ -216,7 +221,7 @@
                         <div class="edu-logo">
                             <img src="./img/ryukoku.png" alt="">
                             <h3><span style="color: red;">R</span>yukoku University</h3>
-                            <p>Bachelor Degree in Economics </p>
+                            <p>Bachelor's Degree in Economics </p>
                             <p>2015 - 2019</p>
                         </div>    
                     </a>
@@ -237,29 +242,53 @@
             <div class="container contact" id="contact">
                 <h2 class="title"><span class="first-letter">C</span>ontact Me</h2>
                 <div class="form">
-                    <form>
+                    <!-- <form method="post" action="contact">
                         <div class="name">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
+                            <input type="text" placeholder="First Name" name="fname">
+                            <input type="text" placeholder="Last Name" name="lname">
                         </div>
-                        <input id="email-inp" type="email" placeholder="Email Address">
-                        <textarea cols="30" rows="10"></textarea>
-                        <button id="btn" type="button">Send</button>
-                    </form>
-                    <div class="sns">
-                        <div>
-                            <a href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><img src="./img/icons/icons8-linkedin-48 (1).png" alt=""></a>
-                            <a href="https://github.com/Nnookk"><img src="./img/icons/icons8-github-48.png" alt=""></a>
-                            <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing"><img src="./img/icons8-document (2).gif" alt=""></a>    
+                        <input id="email-inp" type="email" placeholder="Email Address" name="email">
+                        <textarea cols="30" rows="10" name="msg"></textarea>
+                        <button id="btn" type="submit">Send</button>
+                    </form> -->
+                    <div class="phone">
+                        <div class="phone-top">
+                            <div class="box">
+                                <a href="tel:+14377722943"><i class="las la-phone"></i></a>
+                                <a href="tel:+14377722943">437-772-2943</a>
+                            </div>
+                            <div class="box">
+                                <a href="mailto:ogata.nok@gmail.com" target="_blank"><i class="las la-envelope"></i></a>            
+                                <a href="mailto:ogata.nok@gmail.com">ogata.nok@gmail.com</a>
+                            </div>
                         </div>
-                        <a href="tel:+14377722943">437-772-2943</a>
-                        <a href="mailto:ogata.nok@gmail.com" target="_blank">ogata.nok@gmail.com</a>        
+                        <!-- <div class="sns">
+                            <a href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><i class="lab la-linkedin-in"></i></a>
+                            <a href="https://github.com/Nnookk"><i class="lab la-github"></i></a>
+                            <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing"><i class="las la-file-alt"></i></a>        
+                        </div> -->
+                    </div>
+                    <div class="phone">
+                        <div class="sns">
+                            <div class="box">
+                                <a href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><i class="lab la-linkedin-in"></i></a>
+                                <p>linkedin</p>
+                            </div>
+                            <div class="box">
+                                <a href="https://github.com/Nnookk"><i class="lab la-github"></i></a>
+                                <p>GitHub</p>
+                            </div>
+                            <div class="box">
+                                <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing"><i class="las la-file-alt"></i></a>        
+                                <p>Resume</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <p id="footer">© Naoki Ogata 2022</p>
         </div>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 </html>
