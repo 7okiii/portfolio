@@ -52,7 +52,7 @@ $('.bakery').on('click',function() {
     if ($('.dash-modal').css('display','none')) {
         $('.dash-modal').css('display','block');
         $('.modal-bakery').css('display','block');
-        $('#img').attr('src','./img/project/Screen Shot 2022-02-14 at 1.28.41.png');
+        $('#img').attr('src','./img/project/php-project.png');
     }
 })
 
