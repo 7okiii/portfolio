@@ -77,7 +77,7 @@ $(function() {
     $('.php').click(function(){
         $('#sampleModal').fadeIn();
         $('html').addClass('modalset');
-        $('#img').attr('src','./img/project/Screen Shot 2022-02-10 at 13.51.56.png');
+        $('#img').attr('src','./img/project/php-project.png');
         $('#php-d').css('display','block');
     });
     $('.samplemodal .samplemodal-bg,.samplemodal .samplemodal-close').click(function(){
