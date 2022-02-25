@@ -31,7 +31,6 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Patua+One&family=Prompt:wght@300&family=Ubuntu:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Patua+One&family=Ubuntu:wght@300&display=swap');
 body {
-    display: none;
     background-color: black;
     color: white;
 }
@@ -577,66 +576,202 @@ nav.globalMenuSp.active {
         font-family: ubuntu;
     }
 }
-.dash-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: #f39d12ef;
+html.modalset {
+    overflow: hidden;
+}
+.samplemodal {
+    display: none;
     width: 100%;
-    height: auto;
-    padding: 50px 20px;
-    z-index: 5;
-    border-radius: 10px;
-    .fa-times {
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: white;
-        padding: 10px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+.samplemodal-wrap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    // white-space: nowrap;
+}
+.samplemodal-wrap::-webkit-scrollbar {
+    display: none;
+}
+.samplemodal-wrap:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 100%;
+}
+.samplemodal-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.samplemodal-box {
+    width: 100%;
+    // height: auto;
+    max-width: 900px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    i {
         font-size: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
         &:hover {
-            cursor: pointer;
-            color: black;
-        }
-    }
-    .modal-container {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        color: black;
-        justify-content: center;
-        align-items: center;
-        .modal-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .modal-detail {
-            h3 {
-                font-size: 2rem;
-                margin-bottom: 10px;
-            }
-        }
-        .modal-pic {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            img {
-                width: 95%;
-            }
-        }
-        .modal-php {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            h3 {
-                font-size: 2rem;
-            }
+            color: #000000;
         }
     }
 }
+@media screen and (max-width:350px) {
+    .samplemodal-box .inner {
+        margin-top: 80px;
+    }
+}
+.samplemodal-box .inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background: #fff;
+    padding: 60px 20px;
+    text-align: left;
+    background-color: #10ac84;
+    border-radius: 10px;
+    // margin-top: 80px;
+    .modal-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 100%;
+    }
+    .modal-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+.samplemodal-box .inner > :first-child {
+    margin-top: 0;
+}
+// .samplemodal-box .samplemodal-close {
+
+// }
+// .modal {
+//     background-color: rgba(0, 0, 0, 0.884);
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 2;
+//     top: 0;
+//     left: 0;
+// }
+// .modal-contents {
+//     background-color: rgba(213, 228, 131, 0.425);
+//     display: grid;
+//     justify-content: center;
+//     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+//     padding: 1rem;
+//     position: fixed;
+//     top: 30%;
+// }
+// .modal-img {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     img {
+//         width: 90%;
+//     }
+// }
+// .modal-detail {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 1rem;
+//     h3 {
+//         margin-bottom: 10px;
+//     }
+// }
+// .dash-modal {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     // position: fixed;
+//     background-color: #f39d12ef;
+//     width: 100%;
+//     height: auto;
+//     padding: 50px 20px;
+//     z-index: 5;
+//     border-radius: 10px;
+//     .fa-times {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         color: white;
+//         padding: 10px;
+//         font-size: 1.5rem;
+//         &:hover {
+//             cursor: pointer;
+//             color: black;
+//         }
+//     }
+//     .modal-container {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+//         color: black;
+//         justify-content: center;
+//         align-items: center;
+//         .modal-title {
+//             font-weight: bold;
+//             margin-bottom: 10px;
+//         }
+//         .modal-detail {
+//             h3 {
+//                 font-size: 2rem;
+//                 margin-bottom: 10px;
+//             }
+//         }
+//         .modal-pic {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             img {
+//                 width: 95%;
+//             }
+//         }
+//         .modal-php {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             h3 {
+//                 font-size: 2rem;
+//             }
+//         }
+//     }
+// }
 .test {
     display: flex;
     flex-direction: column;

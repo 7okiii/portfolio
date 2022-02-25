@@ -16,7 +16,6 @@
 }
 
 body {
-  display: none;
   background-color: black;
   color: white;
 }
@@ -829,46 +828,93 @@ nav.globalMenuSp.active {
   font-family: ubuntu;
 }
 
-.dash-modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  background-color: #f39d12ef;
+html.modalset {
+  overflow: hidden;
+}
+
+.samplemodal {
+  display: none;
   width: 100%;
-  height: auto;
-  padding: 50px 20px;
-  z-index: 5;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.samplemodal-wrap {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.samplemodal-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.samplemodal-wrap:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 100%;
+}
+
+.samplemodal-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(51, 51, 51, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.samplemodal-box {
+  width: 100%;
+  max-width: 900px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.samplemodal-box i {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.samplemodal-box i:hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 350px) {
+  .samplemodal-box .inner {
+    margin-top: 80px;
+  }
+}
+
+.samplemodal-box .inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: #fff;
+  padding: 60px 20px;
+  text-align: left;
+  background-color: #10ac84;
   border-radius: 10px;
 }
 
-.dash-modal .fa-times {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  padding: 10px;
-  font-size: 1.5rem;
-}
-
-.dash-modal .fa-times:hover {
-  cursor: pointer;
-  color: black;
-}
-
-.dash-modal .modal-container {
-  display: -ms-grid;
-  display: grid;
-  gap: 20px;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  color: black;
+.samplemodal-box .inner .modal-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -877,17 +923,11 @@ nav.globalMenuSp.active {
           align-items: center;
 }
 
-.dash-modal .modal-container .modal-title {
-  font-weight: bold;
-  margin-bottom: 10px;
+.samplemodal-box .inner img {
+  width: 100%;
 }
 
-.dash-modal .modal-container .modal-detail h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.dash-modal .modal-container .modal-pic {
+.samplemodal-box .inner .modal-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,36 +935,25 @@ nav.globalMenuSp.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.dash-modal .modal-container .modal-pic img {
-  width: 95%;
-}
-
-.dash-modal .modal-container .modal-php {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 1.5rem;
 }
 
-.dash-modal .modal-container .modal-php h3 {
-  font-size: 2rem;
+.samplemodal-box .inner .modal-detail h3 {
+  margin-bottom: 1rem;
+}
+
+.samplemodal-box .inner .modal-detail p {
+  text-align: center;
+}
+
+.samplemodal-box .inner > :first-child {
+  margin-top: 0;
 }
 
 .test {

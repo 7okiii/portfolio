@@ -40,42 +40,84 @@ $(window).scroll(function() {
         }
     });
 });
-$('.php').on('click',function() {
-    if ($('.dash-modal').css('display','none')) {
-        $('.dash-modal').css('display','block');
-        $('.modal-php').css('display','block');
+// $('.php').on('click',function() {
+//     if ($('.dash-modal').css('display','none')) {
+//         $('.dash-modal').css('display','block');
+//         $('.modal-php').css('display','block');
+//         $('#img').attr('src','./img/project/Screen Shot 2022-02-10 at 13.51.56.png');
+//     }
+// })
+
+// $('.bakery').on('click',function() {
+//     if ($('.dash-modal').css('display','none')) {
+//         $('.dash-modal').css('display','block');
+//         $('.modal-bakery').css('display','block');
+//         $('#img').attr('src','./img/project/php-project.png');
+//     }
+// })
+
+// $('.responsive').on('click',function() {
+//     if ($('.dash-modal').css('display','none')) {
+//         $('.dash-modal').css('display','block');
+//         $('.modal-responsive').css('display','block');
+//         $('#img').attr('src','./img/project/musician.png');
+//     }
+// })
+
+// $('.node').on('click',function() {
+//     if ($('.dash-modal').css('display','none')) {
+//         $('.dash-modal').css('display','block');
+//         $('.modal-node').css('display','block');
+//         $('#img').attr('src','./img/project/test.png');
+//     }
+// })
+
+
+$(function() {
+    $('.php').click(function(){
+        $('#sampleModal').fadeIn();
+        $('html').addClass('modalset');
         $('#img').attr('src','./img/project/Screen Shot 2022-02-10 at 13.51.56.png');
-    }
-})
-
-$('.bakery').on('click',function() {
-    if ($('.dash-modal').css('display','none')) {
-        $('.dash-modal').css('display','block');
-        $('.modal-bakery').css('display','block');
-        $('#img').attr('src','./img/project/php-project.png');
-    }
-})
-
-$('.responsive').on('click',function() {
-    if ($('.dash-modal').css('display','none')) {
-        $('.dash-modal').css('display','block');
-        $('.modal-responsive').css('display','block');
+        $('#php-d').css('display','block');
+    });
+    $('.samplemodal .samplemodal-bg,.samplemodal .samplemodal-close').click(function(){
+        $('#sampleModal').fadeOut();
+        $('html').removeClass('modalset');
+        $('#php-d').css('display','none');
+    });
+});	
+$(function() {
+    $('.bakery').click(function(){
+        $('#sampleModal').fadeIn();
+        $('html').addClass('modalset');
+        $('#img').attr('src','./img/project/Screen Shot 2022-02-14 at 1.28.41.png');
+        $('#bakery-d').css('display','block');
+    });
+    $('.samplemodal .samplemodal-bg,.samplemodal .samplemodal-close').click(function(){
+        $('#sampleModal').fadeOut();
+        $('html').removeClass('modalset');
+        $('#bakery-d').css('display','none');
+    });
+});	
+$(function() {
+    $('.responsive').click(function(){
+        $('#sampleModal').fadeIn();
+        $('html').addClass('modalset');
         $('#img').attr('src','./img/project/musician.png');
-    }
-})
-
-$('.node').on('click',function() {
-    if ($('.dash-modal').css('display','none')) {
-        $('.dash-modal').css('display','block');
-        $('.modal-node').css('display','block');
-        $('#img').attr('src','./img/project/test.png');
-    }
-})
-
-$('.fa-times').on('click',function() {
-    $('.dash-modal').css('display','none');
-    $('.modal-detail').css('display','none');
-
+        $('#responsive-d').css('display','block');
+    });
+    $('.samplemodal .samplemodal-bg,.samplemodal .samplemodal-close').click(function(){
+        $('#sampleModal').fadeOut();
+        $('html').removeClass('modalset');
+        $('#responsive-d').css('display','none');
+    });
+});	
+$('#times').on('click',function() {
+    $('#sampleModal').fadeOut();
+    $('html').removeClass('modalset');
+    $('#php-d').css('display','none');
+    $('#bakery-d').css('display','none');
+    $('#responsive-d').css('display','none');
 })
 
 
