@@ -923,7 +923,7 @@ html.modalset {
           align-items: center;
 }
 
-.samplemodal-box .inner img {
+.samplemodal-box .inner .modal-img #img {
   width: 100%;
 }
 

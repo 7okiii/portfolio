@@ -652,9 +652,9 @@ html.modalset {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    img {
-        width: 100%;
+        #img {
+            width: 100%;
+        }    
     }
     .modal-detail {
         display: flex;
