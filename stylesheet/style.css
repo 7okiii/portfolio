@@ -711,19 +711,13 @@ nav.globalMenuSp.active {
 }
 
 .contact-wrapper .form .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #ffffff89;
+  border-radius: 5px;
+  padding: 3rem 0;
+}
+
+.contact-wrapper .form .phone i {
+  font-size: 2.5rem;
 }
 
 .contact-wrapper .form .phone a {
@@ -738,17 +732,7 @@ nav.globalMenuSp.active {
   cursor: pointer;
 }
 
-.contact-wrapper .form .phone {
-  background-color: #ffffff89;
-  border-radius: 5px;
-  padding: 3rem 0;
-}
-
-.contact-wrapper .form .phone i {
-  font-size: 2.5rem;
-}
-
-.contact-wrapper .form .phone-top {
+.contact-wrapper .form .phone .phone-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,7 +749,7 @@ nav.globalMenuSp.active {
   padding: 1rem;
 }
 
-.contact-wrapper .form .phone-top .box {
+.contact-wrapper .form .phone .phone-top .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,11 +758,11 @@ nav.globalMenuSp.active {
           align-items: center;
 }
 
-.contact-wrapper .form .phone-top .box a {
+.contact-wrapper .form .phone .phone-top .box a {
   font-size: 1.1rem;
 }
 
-.contact-wrapper .form .sns {
+.contact-wrapper .form .phone .sns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,9 +774,10 @@ nav.globalMenuSp.active {
           align-items: center;
 }
 
-.contact-wrapper .form .sns .box {
-  display: -ms-grid;
-  display: grid;
+.contact-wrapper .form .phone .sns .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -804,19 +789,17 @@ nav.globalMenuSp.active {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
-  -ms-grid-columns: (minmax(2rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
 }
 
-.contact-wrapper .form .sns .box a {
+.contact-wrapper .form .phone .sns .box a {
   text-align: center;
 }
 
-.contact-wrapper .form .sns .box a:hover {
+.contact-wrapper .form .phone .sns .box a:hover {
   color: #f0942bd7;
 }
 
-.contact-wrapper .form .sns .box p {
+.contact-wrapper .form .phone .sns .box p {
   font-size: 1.1rem;
   font-family: ubuntu;
 }
