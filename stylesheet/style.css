@@ -865,9 +865,11 @@ html.modalset {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background: #fff;
+  font-family: ubuntu;
+  color: #000000;
   padding: 80px 40px;
   text-align: left;
-  background-color: #10ac84;
+  background-color: #00d8d6;
   border-radius: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
