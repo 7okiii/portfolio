@@ -51,15 +51,16 @@ body {
   transition: all .2s;
 }
 
-.nav .logo a:hover {
-  color: #00d8d6;
-}
-
 .nav .logo #logo {
   font-family: alfa;
   font-style: italic;
   font-size: 2.3rem;
   padding-right: 5px;
+  color: #00d8d6;
+}
+
+.nav .logo #logo:hover {
+  color: #575fcf;
 }
 
 .nav ul {
@@ -936,4 +937,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style1.2.css.map */
