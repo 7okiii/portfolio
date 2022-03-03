@@ -476,7 +476,7 @@ nav.globalMenuSp.active {
             padding: 3rem 0;
             i {
                 font-size: 2.5rem;
-                margin-right: 10px
+                // margin-right: 10px
             }
             a {
                 color: black;
@@ -498,8 +498,12 @@ nav.globalMenuSp.active {
                 .box {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     a {
                         font-size: 1.1rem;
+                        i {
+                            margin-right: 10px;
+                        }
                     }
                 }
             }
@@ -514,7 +518,6 @@ nav.globalMenuSp.active {
                     justify-content: center;
                     padding: 1rem;
                     a {
-                        text-align: center;
                         &:hover {
                             color: #00d8d6;
                         }

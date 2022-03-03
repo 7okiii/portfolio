@@ -693,7 +693,6 @@ nav.globalMenuSp.active {
 
 .contact-wrapper .form .phone i {
   font-size: 2.5rem;
-  margin-right: 10px;
 }
 
 .contact-wrapper .form .phone a {
@@ -732,10 +731,17 @@ nav.globalMenuSp.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-wrapper .form .phone .phone-top .box a {
   font-size: 1.1rem;
+}
+
+.contact-wrapper .form .phone .phone-top .box a i {
+  margin-right: 10px;
 }
 
 .contact-wrapper .form .phone .sns {
@@ -765,10 +771,6 @@ nav.globalMenuSp.active {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
-}
-
-.contact-wrapper .form .phone .sns .box a {
-  text-align: center;
 }
 
 .contact-wrapper .form .phone .sns .box a:hover {
@@ -938,4 +940,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.3.css.map */
+/*# sourceMappingURL=style1.4.css.map */
