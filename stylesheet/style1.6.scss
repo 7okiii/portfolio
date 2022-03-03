@@ -183,6 +183,17 @@ body {
     -moz-transform   : rotate(45deg);
     transform        : rotate(45deg);
 }
+
+#small.upMove {
+    animation: UpAnime 0.5s forwards;
+}
+#small.downMove {
+    animation: DownAnime 0.5s forwards;
+}
+.nav.upMove {
+    animation: UpAnime 0.5s forwards;
+}
+
   
 nav.globalMenuSp {
     position: fixed;

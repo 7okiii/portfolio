@@ -219,6 +219,21 @@ body {
   transform: rotate(45deg);
 }
 
+#small.upMove {
+  -webkit-animation: UpAnime 0.5s forwards;
+          animation: UpAnime 0.5s forwards;
+}
+
+#small.downMove {
+  -webkit-animation: DownAnime 0.5s forwards;
+          animation: DownAnime 0.5s forwards;
+}
+
+.nav.upMove {
+  -webkit-animation: UpAnime 0.5s forwards;
+          animation: UpAnime 0.5s forwards;
+}
+
 nav.globalMenuSp {
   position: fixed;
   z-index: 2;
@@ -1002,4 +1017,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.5.css.map */
+/*# sourceMappingURL=style1.6.css.map */

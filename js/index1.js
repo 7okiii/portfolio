@@ -1,21 +1,3 @@
-// hiding nav var when scroll down the page
-// let navbar = document.getElementById('nav');
-// let preScrollPos = 0;
-// let scrollAnime = () => {
-//     let elemTop = $(".about-wrapper").offset().top;
-//     let scroll = $("window").scrollTop();
-//     if (scroll == preScrollPos) {
-
-//     } else if (elemTop > scroll || 0 > scroll - preScrollPos) {
-//         $('#nav').removeClass('upMove');
-//         $('#nav').addClass('downMove');
-//     } else {
-//         $('#nav').removeClass('downMove');
-//         $('#nav').addClass('upMove');
-//     }
-//     preScrollPos = scroll;
-// }
-
 var menuHeight = $('.nav').height();
 var startPos = 0;
 $(window).scroll(function() {
@@ -25,11 +7,17 @@ $(window).scroll(function() {
             // $('.nav').css("top", "-40" + menuHeight + "px");
             $('.nav').addClass("upMove");
             $('.nav').removeClass("downMove");
+            //
+            $('#small').addClass("upMove");
+            $('#small').removeClass("downMove");
         }
     } else {
         // $('.nav').css("top",0 + "px");
         $('.nav').addClass("downMove");
         $('.nav').removeClass("upMove");
+        //
+        $('#small').addClass("downMove");
+        $('#small').removeClass("upMove");
     }
     startPos = currentPos;
 })
