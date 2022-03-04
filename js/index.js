@@ -1,3 +1,4 @@
+// hide and show menu when scroll action happen
 var menuHeight = $('.nav').height();
 var startPos = 0;
 $(window).scroll(function() {
@@ -144,5 +145,8 @@ $('#times').on('click',function() {
     $('#responsive-d').css('display','none');
 })
 
+$('#back-btn').on('click',function() {
+    window.scrollTo({top:0, behavior: 'smooth'});
+})
 
 
