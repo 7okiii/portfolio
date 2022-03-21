@@ -61,7 +61,8 @@ $(window).scroll(function() {
             $(this).addClass('effect');
              
         }else{
-            $(this).removeClass('effect') ;
+            
+            // $(this).removeClass('effect') ;
         }
     });
 });

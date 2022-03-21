@@ -328,7 +328,7 @@ nav.globalMenuSp.active {
   z-index: 1;
   display: -ms-grid;
   display: grid;
-  padding: 15em 0;
+  padding: 18em 0;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -1039,4 +1039,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.8.css.map */
+/*# sourceMappingURL=style1.9.css.map */
