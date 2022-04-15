@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet/style1.9.css">
+    <link rel="stylesheet" href="./stylesheet/style1.9.1.css">
     <script src="./js/jquery.js"></script>
     <script src="https://kit.fontawesome.com/c09e3dd97d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -243,16 +243,7 @@
         <div class="contact-wrapper">
             <div class="container contact" id="contact">
                 <h2 class="title"><span class="first-letter">C</span>ontact Me</h2>
-                <div class="form">
-                    <!-- <form method="post" action="contact">
-                        <div class="name">
-                            <input type="text" placeholder="First Name" name="fname">
-                            <input type="text" placeholder="Last Name" name="lname">
-                        </div>
-                        <input id="email-inp" type="email" placeholder="Email Address" name="email">
-                        <textarea cols="30" rows="10" name="msg"></textarea>
-                        <button id="btn" type="submit">Send</button>
-                    </form> -->
+                <!-- <div class="form">
                     <div class="phone">
                         <div class="phone-top">
                             <div class="box">
@@ -264,11 +255,6 @@
                                 <a href="mailto:ogata.nok@gmail.com">ogata.nok@gmail.com</a>
                             </div>
                         </div>
-                        <!-- <div class="sns">
-                            <a href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><i class="lab la-linkedin-in"></i></a>
-                            <a href="https://github.com/Nnookk"><i class="lab la-github"></i></a>
-                            <a target="_blank" href="https://docs.google.com/document/d/1IN9i-SPQtqcF0WHwiBwOpeEYXmagwvM7wvhU_DJyeJ0/edit?usp=sharing"><i class="las la-file-alt"></i></a>        
-                        </div> -->
                     </div>
                     <div class="phone">
                         <div class="sns">
@@ -285,6 +271,45 @@
                                 <p>Resume</p>
                             </div>
                         </div>
+                    </div>
+                </div> -->
+                <div class="content">
+                    <div class="left">
+                        <div class="phoneMail">
+                            <h4>CONTACT</h4>
+                            <div class="contact-box">
+                                <div class="phone">
+                                    <a href="tel:+14377722943"><i class="las la-phone"></i></a>
+                                    <a href="tel:+14377722943">437-772-2943</a>
+                                </div>
+                                <div class="mail">
+                                    <a href="mailto:ogata.nok@gmail.com" target="_blank"><i class="las la-envelope"></i></a>            
+                                    <a href="mailto:ogata.nok@gmail.com">ogata.nok@gmail.com</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sns">
+                            <h4>SNS</h4>
+                            <div class="sns-box">
+                                <a target="_blank" href="https://www.linkedin.com/in/naoki-ogata-83b3b4231/"><i class="lab la-linkedin-in"></i></a>
+                                <a id="gitHub" target="_blank" href="https://github.com/Nnookk"><i class="lab la-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="resume">
+                            <h4>RESUME</h4>
+                            <div class="resume-box">
+                                <a target="_blank" href="https://drive.google.com/file/d/1wMZ58ukvnxtOOveTSDvEteqy96h4L28s/view?usp=sharing"><i class="las la-file-alt"></i></a>        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <form enctype="multipart/form-data">
+                            <input id="fullName" type="text" placeholder="Your Name" required>
+                            <input id="email" type="email" placeholder="Email" required>
+                            <input id="subject" type="Subject" placeholder="Subject" required>
+                            <textarea name="" id="msg" cols="30" rows="10"></textarea>
+                            <button onclick="sendMail()" type="button">SEND</button>
+                        </form>
                     </div>
                 </div>
             </div>
