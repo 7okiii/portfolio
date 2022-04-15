@@ -915,6 +915,8 @@ nav.globalMenuSp.active {
   background-color: #341F97;
   max-width: 500px;
   margin: 0 auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contact-wrapper .content .right form input {
@@ -926,13 +928,18 @@ nav.globalMenuSp.active {
 .contact-wrapper .content .right form textarea {
   margin-bottom: 20px;
   padding-left: 10px;
+  padding-top: 10px;
 }
 
 .contact-wrapper .content .right form button {
   height: 40px;
-  background-color: #FECA57;
+  background-color: #faa200;
   border: none;
   font-weight: bold;
+}
+
+.contact-wrapper .content .right form button:hover {
+  background-color: #febb29;
 }
 
 .contact-wrapper #footer {
@@ -1093,4 +1100,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.9.1.css.map */
+/*# sourceMappingURL=style1.9.2.css.map */

@@ -683,6 +683,7 @@ nav.globalMenuSp.active {
                 background-color: #341F97;
                 max-width: 500px;
                 margin: 0 auto;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 input {
                     height: 40px;
                     margin-bottom: 20px;
@@ -691,12 +692,16 @@ nav.globalMenuSp.active {
                 textarea {
                     margin-bottom: 20px;
                     padding-left: 10px;
+                    padding-top: 10px;
                 }
                 button {
                     height: 40px;
-                    background-color: #FECA57;
+                    background-color: #faa200;
                     border: none;
                     font-weight: bold;
+                    &:hover {
+                        background-color: #febb29;
+                    }
                 }
             }
         }
