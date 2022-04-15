@@ -903,6 +903,10 @@ nav.globalMenuSp.active {
   color: #00d8d6;
 }
 
+.contact-wrapper .content .right img {
+  width: 100%;
+}
+
 .contact-wrapper .content .right form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1100,4 +1104,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.9.2.css.map */
+/*# sourceMappingURL=style1.9.3.css.map */
