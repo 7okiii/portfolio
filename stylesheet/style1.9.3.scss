@@ -266,8 +266,12 @@ nav.globalMenuSp.active {
     display: block;
 }
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
+    padding: 90px 0;
 }
 
 .greeting-wrapper {
@@ -315,35 +319,57 @@ nav.globalMenuSp.active {
 
 @include fadeIn('.about');
 
-.about {
-    padding: 100px 0;
+// .about {
+//     padding: 100px 0;
+//     h2 {
+//         font-size: 3rem;
+//         font-family: alfa;     
+//         margin-bottom: 50px;   
+//     }
+//     .about-detail {
+//         display: grid;
+//         gap: 20px;
+//         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+//         .about-left {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             font-family: ubuntu;
+//         }
+//         .about-right {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             h3 {
+//                 font-size: 2.5rem;
+//                 font-family: alfa;
+//             }
+//         }
+//     }    
+// }
+.about-left {
+    width: 50%;
     h2 {
+        font-family: ubuntu;
+        margin-bottom: 25px;
         font-size: 3rem;
-        font-family: alfa;     
-        margin-bottom: 50px;   
     }
-    .about-detail {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-        .about-left {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: ubuntu;
-        }
-        .about-right {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3 {
-                font-size: 2.5rem;
-                font-family: alfa;
-            }
-        }
-    }    
+    p {
+        width: 70%;
+        font-family: ubuntu;
+    }
 }
+.about-right {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+        font-size: 2.5rem;
+        font-family: ubuntu
+    }
+}
+
 
 @include fadeIn('.skill');
 .skill-wrapper {

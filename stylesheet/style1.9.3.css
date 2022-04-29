@@ -314,8 +314,18 @@ nav.globalMenuSp.active {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   margin: 0 auto;
+  padding: 90px 0;
 }
 
 .greeting-wrapper {
@@ -405,56 +415,30 @@ nav.globalMenuSp.active {
   opacity: 1;
 }
 
-.about {
-  padding: 100px 0;
+.about-left {
+  width: 50%;
 }
 
-.about h2 {
+.about-left h2 {
+  font-family: ubuntu;
+  margin-bottom: 25px;
   font-size: 3rem;
-  font-family: alfa;
-  margin-bottom: 50px;
 }
 
-.about .about-detail {
-  display: -ms-grid;
-  display: grid;
-  gap: 20px;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.about .about-detail .about-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.about-left p {
+  width: 70%;
   font-family: ubuntu;
 }
 
-.about .about-detail .about-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about-right {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.about .about-detail .about-right h3 {
+.about-right h3 {
   font-size: 2.5rem;
-  font-family: alfa;
+  font-family: ubuntu;
 }
 
 .skill {
