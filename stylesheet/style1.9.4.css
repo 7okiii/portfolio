@@ -314,15 +314,6 @@ nav.globalMenuSp.active {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 90%;
   margin: 0 auto;
   padding: 90px 0;
@@ -415,23 +406,83 @@ nav.globalMenuSp.active {
   opacity: 1;
 }
 
-.about-left {
-  width: 50%;
+.about {
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about .about-detail {
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-detail .about-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: ubuntu;
+}
+
+.about .about-detail .about-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-detail .about-right h3 {
+  font-size: 2.5rem;
+  font-family: alfa;
 }
 
 .about-left h2 {
-  font-family: ubuntu;
+  font-family: alfa;
   margin-bottom: 25px;
   font-size: 3rem;
 }
 
 .about-left p {
-  width: 70%;
   font-family: ubuntu;
 }
 
 .about-right {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   text-align: center;
 }
@@ -750,13 +801,119 @@ nav.globalMenuSp.active {
 }
 
 .contact-wrapper .contact {
-  padding: 90px 0;
+  padding: 100px 0px;
 }
 
 .contact-wrapper .contact h2 {
   font-size: 3rem;
   font-family: alfa;
   margin-bottom: 50px;
+}
+
+.contact-wrapper .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  opacity: 0.9;
+}
+
+.contact-wrapper .form .phone {
+  background-color: #ffffff89;
+  border-radius: 5px;
+  padding: 3rem 0;
+}
+
+.contact-wrapper .form .phone i {
+  font-size: 2.5rem;
+}
+
+.contact-wrapper .form .phone a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: ubuntu;
+}
+
+.contact-wrapper .form .phone a:hover {
+  color: #00d8d6;
+  cursor: pointer;
+}
+
+.contact-wrapper .form .phone .phone-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.contact-wrapper .form .phone .phone-top .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-wrapper .form .phone .phone-top .box a {
+  font-size: 1.1rem;
+}
+
+.contact-wrapper .form .phone .phone-top .box a i {
+  margin-right: 10px;
+}
+
+.contact-wrapper .form .phone .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .form .phone .sns .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.contact-wrapper .form .phone .sns .box a:hover {
+  color: #00d8d6;
+}
+
+.contact-wrapper .form .phone .sns .box p {
+  font-size: 1.1rem;
+  font-family: ubuntu;
 }
 
 .contact-wrapper .content {
@@ -772,8 +929,8 @@ nav.globalMenuSp.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (minmax(350px, 500px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .contact-wrapper .content .left {
@@ -1088,4 +1245,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.9.3.css.map */
+/*# sourceMappingURL=style1.9.4.css.map */
