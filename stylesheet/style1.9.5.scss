@@ -322,6 +322,7 @@ nav.globalMenuSp.active {
 .about {
     padding: 100px 0;
     display: grid;
+    gap: 40px;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
