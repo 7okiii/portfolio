@@ -60,12 +60,13 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 90%;
+    width: 100%;
     // background-color: #10ac8570;
     height: 60px;
     // padding-left: 20px;
     z-index: 5;
     .logo {
+        padding-left: 20px;
         a {
             display: inline-block;
             text-decoration: none;

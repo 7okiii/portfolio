@@ -56,9 +56,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  width: 90%;
+  width: 100%;
   height: 60px;
   z-index: 5;
+}
+
+.nav .logo {
+  padding-left: 20px;
 }
 
 .nav .logo a {
@@ -1246,4 +1250,4 @@ html.modalset {
       -ms-flex-pack: center;
           justify-content: center;
 }
-/*# sourceMappingURL=style1.9.5.css.map */
+/*# sourceMappingURL=style1.9.6.css.map */
